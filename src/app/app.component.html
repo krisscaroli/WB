@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav>
+    <mat-toolbar>
+        <mat-toolbar-row routerLink="/home">
+          Home
+        </mat-toolbar-row>
+        
+    <mat-toolbar-row routerLink="/team">
+      Team
+    </mat-toolbar-row>
+    
+    
+  </mat-toolbar>
+    </mat-sidenav>
+  <mat-toolbar color="primary">
+      <button mat-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+         
+        </button>
+        <span>Waybear</span>
+        <span class="example-spacer"></span>
+        <button mat-button  routerLink="/home">Inicio</button>
+        <button mat-button  routerLink="/team">Equipo</button>
+   
+  
+  
+    
+  </mat-toolbar>
+  <div class="body-margin center-align ">
+  <router-outlet></router-outlet>
+</div>
+<mat-toolbar color='primary'>
+    <span class='spacer'></span>
+      <h3>© Copyright Waybear 2018.</h3>
+    <span class='spacer'></span>
+  </mat-toolbar>
+
+</mat-sidenav-container>
+

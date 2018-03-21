@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body{
+    font-family: 'Roboto',sans-serif;
+ margin:0px;   
+}
+
+.sec img{
+    width: 180px;
+    height: 250px;
+    border-radius: 50%;
+}
+.body-margin{
+    margin: 50px;
+}
+.white-text{
+    color: #FFF!important;
+}
+.center-align{
+    text-align:center;
+}
+.margin-top-10{
+    margin-top:10px;
+}
+.margin-top-20{
+    margin-top:20px;
+}
+.margin-top-100{
+    margin-top:100px;
+}
